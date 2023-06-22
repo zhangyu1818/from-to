@@ -11,7 +11,7 @@ Sometimes, all you need is an extremely lightweight package to transition from o
 ## Install
 
 ```shell
-pnpm install from-to
+pnpm install from-to.js
 ```
 
 ## Usage
