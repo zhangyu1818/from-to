@@ -4,6 +4,7 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "homepage": "https://github.com/zhangyu1818/from-to",
   "author": {
     "name": "zhangyu1818",
