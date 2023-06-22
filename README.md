@@ -1,5 +1,7 @@
 # From To
 
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/from-to.js)
+
 Transitioning **from** one value **to** another.
 
 ---
