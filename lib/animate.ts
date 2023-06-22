@@ -8,7 +8,7 @@ import {
 
 import type { AnimatedValue, Animator, BaseValue, RefValue } from './interface'
 
-interface Loop {
+export interface Loop {
   loopDelay?: number
   loop?: boolean
 }
@@ -19,11 +19,12 @@ export interface AnimationLifecycles<Value> {
   onStop?: () => void
 }
 
-export type Options<Value> = AnimationLifecycles<Value> &
-  (Bezier | Spring) &
+export type TransitionOptions = (Bezier | Spring) &
   Loop & {
     autoplay?: boolean
   }
+
+export type Options<Value> = TransitionOptions & AnimationLifecycles<Value>
 
 export interface Controls {
   then: (resolve: () => void, reject?: () => void) => Promise<void>
