@@ -22,7 +22,7 @@ animate(from: Value, to: Value, options?: Options<Value>) => Controls
 
 It supports transition animations for both numerical values and colors.
 
-For example, you can use `animate(0, 100)` or `animate([0, 0, 0], [100, 200, 300])` for transitioning numerical values or `animate('#000', '#fff')` for transitioning colors.
+You can use `animate(0, 100)` to transition numerical values or `animate([0, 0, 0], [100, 200, 300])` to transition arrays of numerical values. For transitioning colors, you can use `animate('#000', '#fff')`.
 
 ### Transition
 
