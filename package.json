@@ -1,0 +1,73 @@
+{
+  "name": "from-to",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "homepage": "https://github.com/zhangyu1818/from-to",
+  "author": {
+    "name": "zhangyu1818",
+    "url": "https://zhangyu.dev"
+  },
+  "repository": {
+    "url": "https://github.com/zhangyu1818/from-to.git"
+  },
+  "description": "A lightweight animation library that offers tween and spring animations, with a gzip compressed size of just 1kb.",
+  "keywords": [
+    "animation",
+    "animate",
+    "tween",
+    "spring"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:site": "vite build -c vite.site.config.ts",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts lib/**",
+    "deploy": "gh-pages -d build",
+    "prepare": "husky install"
+  },
+  "packageManager": "pnpm@8.5.1",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@nx-js/observer-util": "^4.2.2",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@tweakpane/core": "^1.1.9",
+    "@tweakpane/plugin-essentials": "^0.1.8",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.3.2",
+    "tweakpane": "^3.1.10",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "bezier-easing": "^2.1.0"
+  }
+}
